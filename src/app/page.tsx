@@ -1,5 +1,5 @@
 const Page = () => {
-  return <div>hello</div>;
+  return <div className="w-full h-screen "></div>;
 };
 
 export default Page;

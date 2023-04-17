@@ -1,3 +1,4 @@
+import Nav from "@/components/Nav";
 import "./globals.css";
 
 export const metadata = {
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="text-tc bg-primary font-mono">
+        <Nav />
+        <div className="ml-[6%]">{children}</div>
+      </body>
     </html>
   );
 }
