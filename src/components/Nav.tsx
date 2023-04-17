@@ -10,7 +10,7 @@ type NavItemType = {
 
 const Nav = () => {
   const [navItems, setNavItems] = useState<NavItemType[]>([
-    { name: "Home", active: true },
+    { name: "Home", active: false },
     { name: "Chat", active: false },
     { name: "Friends", active: false },
     { name: "Settings", active: false },

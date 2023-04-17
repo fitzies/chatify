@@ -1,6 +1,6 @@
 import { getUser } from "./supabase";
 
-const handleUserUpdate = (callback: Function) => {
+const handleUser = (callback: Function) => {
   getUser(localStorage.getItem("user")!)
     .then((res) => {
       callback(res!);
@@ -8,4 +8,4 @@ const handleUserUpdate = (callback: Function) => {
     .catch((error) => console.log(error));
 };
 
-export { handleUserUpdate };
+export { handleUser };
